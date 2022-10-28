@@ -14,16 +14,25 @@
 body {
   width: 375px;
   height: 718px;
-  border: 3px solid#344563;
 }
 
-a.logo {
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px 10px 12px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+  top: calc(50% - 40px / 2);
+}
+
+.logo .myLogo a {
+  margin-top: -34px;
+  margin-left: -30px;
   width: 76px;
   height: 20px;
-  position: absolute;
-  top: 10px;
-  left: 12px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -37,99 +46,46 @@ a.logo {
   flex-grow: 0;
 }
 
-nav {
-  width: 327px;
-  height: 146px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-ul {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 80px;
-  left: -100%;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: #344563;
-  font-size: 17px;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+.hamburger {
+  margin-top: -45px;
+  margin-right: 120px;
+  width: 24px;
+  height: 24px;
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: hsl(211, 16%, 72%);
   float: right;
-  width: 9px;
-  height: 9px;
-  margin-right: 70px;
-  margin-top: -25px;
-  cursor: pointer;
-  display: none;
-  display: block;
-}
-
-#check {
-  display: none;
-}
-
-#check:checked ~ ul {
-  left: 0;
 }
 
 .title {
+  margin-top: -45px;
+  margin-left: -30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.title h1 {
+  align-items: center;
   width: 327px;
   height: 150px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: hsl(218, 54%, 20%);
+  display: flex;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .presentation {
-  margin-top: 30px;
   width: 327px;
   height: 146px;
-  font-family: 'Poppins', sans-serif;
+  margin-left: -30px;
+}
+
+.presentation .intro {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -140,34 +96,34 @@ nav ul li a {
   flex-grow: 0;
 }
 
-.connect {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
+.intro .connect {
   width: 117px;
   height: 24px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  font-family: 'Poppins', sans-serif;
+  margin-left: -30px;
+  padding-top: 10px;
+}
+
+.connect .connect-link {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: hsl(234, 100%, 75%);
-  border: 2px solid #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.social-icons{
-  display: flex; 
-  gap: 2em; 
-  padding-left: 0; 
-  border: 1px ;
-  border-color: black;
+.icons {
+  margin-left: -60px;
 }
 
-.social-icons li { 
-  list-style: none; 
+.social-icons {
+  height: 20px;
+  display: flex;
+  margin: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 11rem;
+  list-style: none;
 }
