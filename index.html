@@ -9,43 +9,58 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Portfolio</title>
     <style>
-        section{
-            background: url("header-shapes mobile.png");
+        .info{
+            background: url("style/img/header-shapes\ mobile.png");
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 114px 24px;
+            gap: 12px;
+            position: absolute;
+            width: 375px;
+            height: 604px;
+            left: calc(50% - 375px/2);
+            top: 92px;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">My logo</label>
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="logo">
+                <h3 class="myLogo">
+                    <a href="#Home">My Logo</a>
+                </h3>
+            </div>
+            <div class="hamburger">
+                <a href="#"><img src="style/img/hamburger-vactors.png" class="hamburger-img"></a>
+            </div>
         </nav>
     </header>
 
-    <section>
-        <h1 class="title">I'm Salwa <br>Glad to see you!</h1>
-        <p class="presentation">I’m a software developer! I can help you build a product , feature or
-            website Look through some of my work and experience! If you like what
-            you see and have a project you need coded, don’t hestiate to contact
-            me.
-        </p>
-        <p class="connect">Let's connect</p>
-        <div class="social-icon">
-                <a ref="#"><img src="style/img/twitter.png" class="icon-image" alt="twitter icon"/></a>
-                <a ref="#"><img src="style/img/m.png" class="icon-image" alt="m icon"/></a>
-                <a ref="#"><img src="style/img/github.png" class="icon-image" alt="github icon"/></a>
-                <a href="#"><img src="style/img/linkedin.png" class="icon-image"></img></a>
-                <a href="#"><img src="style/img/v.png" class="icon-image" alt="v icon"/></a>
-                
+    <section class="info">
+        <div class="title">
+            <h1>I'm Salwa <br>Glad to see you!</h1>
+        </div>
+        <div class="presentation">
+            <p class="intro">I’m a software developer! I can help you build a product , feature or
+                website Look through some of my work and experience! If you like what
+                you see and have a project you need coded, don’t hestiate to contact
+                me.
+            </p>
+        </div>
+        <div class="connect">
+            <a href="#"><p class="connect-link">Let's connect</p></a>
+        </div>
+        <div class="icons">
+            <ul class="social-icons">
+                    <li><a href="#"><img src="style/img/twitter.png" alt="twitter icon"/></a></li>
+                    <li><a href="#"><img src="style/img/m.png" alt="m icon"/></a></li>
+                    <li><a href="#"><img src="style/img/github.png" alt="github icon"/></a></li>
+                    <li><a href="#"><img src="style/img/linkedin .png" alt="linkedin icon"/></a></li>
+                    <li><a href="#"><img src="style/img/v.png" alt="v icon"/></a></li>
+            </ul>
         </div>
     </section>
 </body>
