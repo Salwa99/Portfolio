@@ -385,11 +385,13 @@ body {
 .tags ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 0;
   gap: 8px;
   margin: -3px 0 0 -51px;
+}
+
+.tags li {
+  float: left;
 }
 
 .tags ul :nth-child(1),
