@@ -7,7 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   position: relative;
-  left: 15px;
+  left: 10px;
   top: 15px;
 }
 
@@ -528,6 +528,7 @@ button:active {
   position: relative;
   left: -8px;
   top: -12px;
+  padding: 0;
 }
 
 .contact-container {
