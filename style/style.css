@@ -63,7 +63,7 @@ body {
 
 .hamburger {
   margin-top: -45px;
-  margin-right: 120px;
+  margin-right: 91px;
   width: 24px;
   height: 24px;
   flex: none;
@@ -334,9 +334,20 @@ body {
 
 .connect2 {
   padding-bottom: 1em;
-  margin: 0 0 0 -237px;
+  margin: 0 0 0 -205px;
 }
 
+.connect2 .text2 {
+  margin-left: 75px;
+}
+
+.connect2 .social-icons2 {
+  margin-left: 65px;
+}
+
+.connect2 .resume {
+  margin-left: 65px;
+}
 .social-icons2 {
   height: 20px;
   display: flex;
@@ -473,6 +484,11 @@ button:active {
   padding-left: 0;
 }
 
+.programing-part {
+  margin-top: 50px;
+  margin-left: 49px;
+}
+
 .programing-languages {
   display: flex;
   margin: 0 -89px 0 0;
@@ -504,17 +520,20 @@ button:active {
 }
 
 .frameworks p {
-  margin: -47px 0 0 -200px;
+  position: relative;
+  top: -21px;
+  left: 59px;
+  margin-top: 33px;
 }
 
 .chevron1 img {
   position: relative;
-  top: -29px;
+  top: 14px;
 }
 
 .chevron2 img {
   position: relative;
-  top: -26px;
+  top: 26px;
 }
 
 .contact {
