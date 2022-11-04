@@ -840,11 +840,6 @@ form .line {
     font-size: 20px;
   }
 
-  .connect1 .social-icons1 {
-    position: relative;
-    left: -59%;
-  }
-
   .social-icons1 {
     height: 20px;
     display: flex;
@@ -855,6 +850,11 @@ form .line {
     position: relative;
     top: -124px;
     list-style: none;
+  }
+
+  .connect1 .social-icons1 {
+    position: relative;
+    left: -59%;
   }
 
   .allcards {
