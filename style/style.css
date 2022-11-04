@@ -776,7 +776,7 @@ form .line {
     width: 1440px;
     margin-bottom: 180px;
     position: relative;
-    left: 500px;
+    left: 300px;
     top: 100px;
   }
 
@@ -894,7 +894,7 @@ form .line {
     flex-direction: row;
     justify-content: space-between;
     gap: 46px;
-    width: 70%;
+    width: 90%;
   }
 
   .card2,
@@ -903,7 +903,7 @@ form .line {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 46px;
-    width: 70%;
+    width: 90%;
   }
 
   .tonic-title-frame2 .break {
@@ -998,6 +998,8 @@ form .line {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    left: -190px;
   }
 
   .bloc-l .title2,
@@ -1011,7 +1013,7 @@ form .line {
 
   .title2 h1 {
     position: relative;
-    left: -55px;
+    left: -43px;
   }
 
   .presentation2 {
@@ -1033,9 +1035,9 @@ form .line {
 
   .resume {
     position: relative;
-    left: -501px;
+    left: -601px;
     top: 130px;
-    margin-left: 323px;
+    margin-left: 224px;
   }
 
   .button {
@@ -1079,6 +1081,7 @@ form .line {
     width: 122px;
     height: 120px;
     align-items: flex-start;
+    margin-left: -73px;
   }
 
   .icon p {
