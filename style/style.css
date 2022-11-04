@@ -140,7 +140,8 @@ ul {
 }
 
 .connect1 .text1 {
-  margin-left: -235px;
+  position: relative;
+  left: 10%;
 }
 
 .social-icons1 {
@@ -785,7 +786,7 @@ form .line {
 
   .connect1 .text1 {
     position: relative;
-    left: -70%;
+    left: -65%;
   }
 
   .connect2 .text2 {
@@ -839,6 +840,11 @@ form .line {
     font-size: 20px;
   }
 
+  .connect1 .social-icons1 {
+    position: relative;
+    left: -59%;
+  }
+
   .social-icons1 {
     height: 20px;
     display: flex;
@@ -848,7 +854,6 @@ form .line {
     gap: 10px;
     position: relative;
     top: -124px;
-    left: -280px;
     list-style: none;
   }
 
@@ -981,11 +986,12 @@ form .line {
 
   /* About myself */
   .about {
-    margin-top: 250px;
-    margin-bottom: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 130px;
+    padding-top: 140px;
+    width: 90%;
   }
 
   .bloc-l {
@@ -1034,13 +1040,6 @@ form .line {
 
   .button {
     padding-left: 12px;
-  }
-
-  .about {
-    margin: 0;
-    margin-bottom: 130px;
-    padding-top: 140px;
-    width: 90%;
   }
 
   .about-right {
