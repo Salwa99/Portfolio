@@ -12,7 +12,7 @@
 }
 
 body {
-  width: 100%;
+  width: 375px;
 }
 
 .text1 a {
@@ -78,7 +78,7 @@ ul {
 
 .info {
   background: url("../style/img/header-shapes\ mobile.png");
-  background-size: cover;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -139,6 +139,10 @@ ul {
   flex-grow: 0;
 }
 
+.connect1 .text1 {
+  margin-left: -235px;
+}
+
 .social-icons1 {
   height: 20px;
   display: flex;
@@ -153,6 +157,7 @@ ul {
 }
 
 .allcards {
+  width: 76%;
   display: grid;
   grid-column: auto;
   gap: 100px;
@@ -176,6 +181,10 @@ ul {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.tags .ruby {
+  display: none;
 }
 
 .snapshoot1 {
@@ -246,7 +255,18 @@ ul {
   margin: 0 11px 0 4px;
 }
 
-.role,
+.role {
+  width: 100px;
+  height: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  list-style: disc;
+}
+
 .year {
   width: 100px;
   height: 16px;
@@ -256,6 +276,37 @@ ul {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+  list-style: disc;
+  margin: 0 0 0 4%;
+}
+
+.js img,
+.html img,
+.css img {
+  margin: -20px 0 -12px 0;
+}
+
+.chevron1 img {
+  position: relative;
+  top: 14px;
+}
+
+.chevron2 img {
+  position: relative;
+  top: 26px;
+}
+
+.programing-languages img {
+  margin: 16px 9px 16px 117px;
+}
+
+.card2 .snapshoot2 img,
+.card4 .snapshoot2 img {
+  margin: 0 0 0 -12%;
+}
+
+.card3 .snapshoot1 img {
+  width: 259px;
 }
 
 .tonic-title-frame .client {
@@ -343,13 +394,38 @@ ul {
   margin-top: -39px;
 }
 
+.title2 h1 {
+  align-items: center;
+  width: 327px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: hsl(218, 54%, 20%);
+  display: flex;
+  margin-left: -22px;
+}
+
+.presentation2 .intro2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 3px;
+}
+
 .connect2 {
   padding-bottom: 1em;
   margin: 0 0 0 -205px;
 }
 
 .connect2 .text2 {
-  margin-left: 75px;
+  margin-left: 168px;
 }
 
 .social-icons2 {
@@ -362,14 +438,7 @@ ul {
   position: relative;
   top: -1px;
   list-style: none;
-}
-
-.connect2 .social-icons2 {
-  margin-left: 65px;
-}
-
-.connect2 .resume {
-  margin-left: 65px;
+  left: 186px;
 }
 
 .language-btn {
@@ -389,7 +458,7 @@ ul {
   background-color: #fff;
   margin: 80px 0 2px 0;
   position: relative;
-  left: 27px;
+  left: -86px;
   padding-left: 10px;
 }
 
@@ -411,36 +480,10 @@ ul {
   padding-right: 24px;
 }
 
-.title2 h1 {
-  align-items: center;
-  width: 327px;
-  height: 150px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: hsl(218, 54%, 20%);
-  display: flex;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .presentation2 {
   width: 327px;
   height: 146px;
   margin-left: -30px;
-}
-
-.presentation2 .intro2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .tags ul {
@@ -471,7 +514,8 @@ ul {
   text-align: center;
 }
 
-.tags ul :nth-child(3) {
+.tags ul :nth-child(3),
+.tags ul :nth-child(4) {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -523,12 +567,6 @@ button:active {
   color: #253858;
 }
 
-.js img,
-.html img,
-.css img {
-  margin: -20px 0 -12px 0;
-}
-
 .links {
   display: flex;
   gap: 2em;
@@ -537,16 +575,12 @@ button:active {
 
 .programing-part {
   margin-top: 50px;
-  margin-left: 49px;
+  margin-left: -55px;
 }
 
 .programing-languages {
   display: flex;
   margin: 0 -89px 0 0;
-}
-
-.programing-languages img {
-  margin: 16px 9px 16px 117px;
 }
 
 .programing-languages p {
@@ -573,18 +607,8 @@ button:active {
 .frameworks p {
   position: relative;
   top: -21px;
-  left: 59px;
+  left: 24px;
   margin-top: 33px;
-}
-
-.chevron1 img {
-  position: relative;
-  top: 14px;
-}
-
-.chevron2 img {
-  position: relative;
-  top: 26px;
 }
 
 .contact {
@@ -656,7 +680,7 @@ form {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  margin-top: 80px;
+  margin-top: 48px;
   padding: 10px 0;
 }
 
@@ -703,15 +727,18 @@ form .line {
   margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     width: 100%;
     box-sizing: border-box;
-    background: rgb(255, 255, 255);
   }
 
   .hamburger {
     display: none;
+  }
+
+  nav {
+    margin-top: -15px;
   }
 
   ul {
@@ -739,17 +766,30 @@ form .line {
     align-items: center;
     text-align: center;
     color: #344563;
+    margin-top: -15px;
   }
 
   .info {
     background: url("../style/img/desktop/Header\ bg@2x.png");
     background-size: cover;
     width: 1440px;
-    height: 606px;
     margin-bottom: 180px;
     position: relative;
-    left: 140px;
+    left: 500px;
     top: 100px;
+  }
+
+  .connect1 {
+    top: 15px;
+  }
+
+  .connect1 .text1 {
+    position: relative;
+    left: -70%;
+  }
+
+  .connect2 .text2 {
+    margin-left: -180px;
   }
 
   .text1 a {
@@ -767,12 +807,23 @@ form .line {
   .title1 {
     width: 920px;
     height: 122px;
-    margin-left: 260px;
+    margin-left: 120px;
     padding-top: 170px;
+  }
+
+  .info .title1,
+  .presentation1,
+  .connect1,
+  .social-icons1 {
+    margin-left: -15%;
   }
 
   .title1 h1 {
     width: 500px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
   }
 
   .presentation1 {
@@ -784,8 +835,7 @@ form .line {
     margin-top: 136px;
     width: 920px;
     height: 98px;
-    margin-left: 119px;
-    padding-left: 195px;
+    margin-left: 15px;
     font-size: 20px;
   }
 
@@ -798,14 +848,19 @@ form .line {
     gap: 10px;
     position: relative;
     top: -124px;
-    left: 34px;
+    left: -280px;
     list-style: none;
   }
 
   .allcards {
     width: 100%;
     position: relative;
-    left: 300px;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -40px;
+    padding: 142px 0;
   }
 
   .snapshoot1 {
@@ -817,13 +872,15 @@ form .line {
     width: 50%;
     padding: 10px;
     display: flex;
+    height: 100%;
   }
 
   .left-block {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 80%;
+    height: 100%;
+    left: 0;
   }
 
   .card1,
@@ -842,6 +899,14 @@ form .line {
     justify-content: space-between;
     gap: 46px;
     width: 70%;
+  }
+
+  .tonic-title-frame2 .break {
+    display: none;
+  }
+
+  .tags .ruby {
+    display: flex;
   }
 
   .text-desc p {
@@ -864,7 +929,7 @@ form .line {
 
   ul.tonic-ul {
     margin: 0;
-    margin-left: -17px;
+    margin-left: -20px;
   }
 
   .tonic-ul li {
@@ -884,11 +949,25 @@ form .line {
     margin: 0;
   }
 
+  .tonic-title-frame2 h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+
   .tags ul {
     float: left;
     margin: 0;
     margin-left: -15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .tags ul .tag-pl {
+    width: auto;
+    padding: 4px 12px;
     margin-top: -20px;
+    line-height: 12px;
   }
 
   .btn button {
@@ -901,13 +980,13 @@ form .line {
   }
 
   /* About myself */
-.about {
-  margin-top: 250px;
-  margin-bottom: 150px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  .about {
+    margin-top: 250px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   .bloc-l {
     display: flex;
@@ -917,7 +996,7 @@ form .line {
 
   .bloc-l .title2,
   .presentation2,
-  .connect2{
+  .connect2 {
     margin: auto;
     position: relative;
     left: 300px;
@@ -934,16 +1013,16 @@ form .line {
     height: 102px;
   }
 
-  .text2 a {
-    position: relative;
-    left: -200px;
-  }
-
   .social-icons2 {
     gap: 0;
-    padding-left: 0px;
+    padding-left: 0;
     position: relative;
-    left: -220px;
+    left: -150px;
+  }
+
+  .language-btn {
+    position: relative;
+    left: 23px;
   }
 
   .resume {
@@ -951,16 +1030,94 @@ form .line {
     left: -501px;
     top: 130px;
     margin-left: 323px;
-}
+  }
 
-.button {
-  padding-left: 12px;
-}
+  .button {
+    padding-left: 12px;
+  }
 
-.programing-part {
-  
+  .about {
+    margin: 0;
+    margin-bottom: 130px;
+    padding-top: 140px;
+    width: 90%;
+  }
 
-}
+  .about-right {
+    width: 700px;
+    height: 80%;
+    margin-left: -150px;
+  }
+
+  .programing-part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programing-languages {
+    margin-left: -20px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .programing-languages p {
+    color: #344563;
+  }
+
+  .programing-languages img {
+    margin-top: -10px;
+  }
+
+  .lang-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lang-icons .icon {
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    align-items: flex-start;
+  }
+
+  .icon p {
+    margin-top: -16px;
+    margin-left: -25px;
+  }
+
+  .icon img {
+    margin-left: -25px;
+  }
+
+  .lang-icons .html {
+    margin-left: 112px;
+  }
+
+  .lang-icons .css {
+    margin-left: 112px;
+  }
+
+  .line-hr {
+    width: 710px;
+    margin-left: -60px;
+  }
+
+  .myskills {
+    margin-left: -90px;
+    margin-bottom: 20px;
+  }
+
+  .myskills img {
+    margin-left: -100px;
+  }
+
+  .myskills p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #344563;
   }
 
   /* Contact me Form */
@@ -988,9 +1145,8 @@ form .line {
   }
 
   .contact-text .para {
-    width: 569px;
     height: 102px;
-    margin-left: 471px;
+    width: auto;
   }
 
   form {
@@ -999,6 +1155,7 @@ form .line {
     position: relative;
     top: -17px;
     left: 2px;
+    margin-left: -90px;
   }
 
   form input,
@@ -1007,6 +1164,10 @@ form .line {
     font-size: 17px;
     width: 447px;
     border-radius: none;
+  }
+
+  form .button {
+    margin-top: 35px;
   }
 
   .line {
