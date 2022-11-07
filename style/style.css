@@ -531,14 +531,16 @@ ul {
   text-align: center;
 }
 
-button:hover {
-  background-color: #396df2;
-  color: #eee;
-}
-
 button:active {
   background-color: blue;
   border-color: #333;
+  color: #eee;
+}
+
+.btn button:hover {
+  font-size: 1rem;
+  transform: scale(0.7);
+  background-color: #396df2;
   color: #eee;
 }
 
@@ -1038,6 +1040,10 @@ form .line {
     left: -601px;
     top: 130px;
     margin-left: 224px;
+  }
+
+  .resume:hover {
+    transform: translate(50px);
   }
 
   .button {

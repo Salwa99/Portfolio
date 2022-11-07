@@ -25,6 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/Salwa99)
 - Twitter: [@twitterhandle](https://twitter.com/salwa_ballouti)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/salwa-ballouti-096358251/)
+- Live  Demo: Click here to check my Portfolio :point_right: (https://salwa99.github.io/Portfolio/)
 
 ## 🤝 Contributing
 
