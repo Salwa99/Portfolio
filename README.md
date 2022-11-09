@@ -12,7 +12,8 @@
 
 
 ## Live Demo 
-[Live Demo Link](https://salwa99.github.io/Portfolio/)
+:point_right: [Live Demo Link](https://salwa99.github.io/Portfolio/)
+
 
 ## Getting Started
 
