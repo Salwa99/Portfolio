@@ -6,13 +6,49 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  position: relative;
-  left: 10px;
-  top: 15px;
 }
 
-body {
-  width: 375px;
+header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+nav {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 44px;
+  bottom: 0px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 50px;
+  width: 18px;
+  height: 12px;
+  top: 2px;
+}
+
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+  
+}
+
+.logo .myLogo a {
+  width: 76px;
+  height: 20px;
+  padding-left: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: hsl(234, 100%, 69%);
 }
 
 .text1 a {
@@ -31,46 +67,6 @@ body {
   text-decoration: none;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px 10px 12px;
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  left: 12px;
-  top: calc(50% - 40px / 2);
-}
-
-.logo .myLogo a {
-  margin-top: -34px;
-  margin-left: -30px;
-  width: 76px;
-  height: 20px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: hsl(234, 100%, 69%);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.hamburger {
-  margin-top: -45px;
-  margin-right: 91px;
-  width: 24px;
-  height: 24px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  float: right;
-}
 
 ul {
   display: none;
@@ -84,36 +80,32 @@ ul {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
+  position: absolute;
   width: 375px;
-  height: 718px;
+  height: 604px;
+  left: calc(50% - 375px/2);
+  top: 92px;
 }
 
 .title1 {
-  margin-top: -45px;
-  margin-left: -30px;
+  width: 327px;
+  height: 150px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .title1 h1 {
-  align-items: center;
-  width: 327px;
-  height: 150px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: hsl(218, 54%, 20%);
-  display: flex;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .presentation1 {
   width: 327px;
   height: 146px;
-  margin-left: -30px;
+  padding-top: 12px;
 }
 
 .presentation1 .intro1 {
@@ -127,41 +119,29 @@ ul {
   flex-grow: 0;
 }
 
-.connect1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: -45px;
-  color: hsl(234, 100%, 75%);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.connect1 .text1 {
-  position: relative;
-  left: 10%;
+.text1 {
+  padding-top: 12px;
 }
 
 .social-icons1 {
+  width: 170.17px;
   height: 20px;
   display: flex;
-  margin: 0.5rem 0;
   align-items: center;
   justify-content: space-between;
-  width: 11rem;
-  position: relative;
-  top: -15px;
-  left: -21px;
   list-style: none;
 }
 
 .allcards {
-  width: 76%;
   display: grid;
-  grid-column: auto;
-  gap: 100px;
+  grid-row-gap: 80px;
+  align-items: center;
+  padding: 114px 24px;
+  position: absolute;
+  width: 375px;
+  height: 2788px;
+  left: 0px;
+  top: 718px;
 }
 
 .card1,
@@ -175,28 +155,16 @@ ul {
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 600px;
+  height: 596px;;
   background: hsl(0, 0%, 100%);
   border: 1px solid hsl(223, 12%, 89%);
   border-radius: 16px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.tags .ruby {
-  display: none;
 }
 
 .snapshoot1 {
   width: 295px;
   height: 220px;
-  margin-right: 60px;
-  margin-top: -30px;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .snapshoot2 {
@@ -206,17 +174,31 @@ ul {
 .left-block {
   width: 295px;
   height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
 }
 
 .tonic-title-frame {
   width: 295px;
   height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+
+.tonic-title-frame1{
+  padding-top: 12px;
 }
 
 .tonic-title-frame1 h2 {
-  margin-left: -40px;
-  margin-top: -20px;
   font-style: normal;
+  width: 295px;
+  height: 36px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -229,18 +211,16 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: hsl(218, 54%, 20%);
-  margin: -22px 0 -3px -36px;
 }
 
 .tonic-ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
-  gap: 12px;
-  width: 300px;
+  gap: 27px;
+  width: 304px;
   height: 32px;
-  margin: -7px 0 0 -54px;
+  padding: 6px;
 }
 
 .client {
@@ -253,7 +233,6 @@ ul {
   line-height: 16px;
   color: #344563;
   list-style: none;
-  margin: 0 11px 0 4px;
 }
 
 .role {
@@ -278,13 +257,102 @@ ul {
   line-height: 16px;
   color: #7a869a;
   list-style: disc;
-  margin: 0 0 0 4%;
+}
+
+.text-desc {
+  width: 295px;
+  height: 76px;
+}
+
+.text-desc p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: hsl(218, 31%, 30%);
+}
+
+.tags {
+  width: 203px;
+  height: 24px;
+}
+
+.tags ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 89px;
+  height: 24px;
+  background: hsl(240, 100%, 96%);
+  border-radius: 8px;
+}
+
+.tags li {
+  list-style: none;
+}
+
+.tags ul :nth-child(1),
+.tags ul :nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  width: 29px;
+  height: 16px;
+  text-align: center;
+}
+
+.tags ul :nth-child(3),
+.tags ul :nth-child(4) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  width: 65px;
+  height: 16px;
+  text-align: center;
+}
+
+.tags .ruby {
+  display: none;
+}
+
+.btn {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 124px;
+  height: 48px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+}
+
+
+
+.btn button {
+  width: 105px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396DF2;
 }
 
 .js img,
 .html img,
 .css img {
-  margin: -20px 0 -12px 0;
+  
 }
 
 .chevron1 img {
@@ -303,7 +371,7 @@ ul {
 
 .card2 .snapshoot2 img,
 .card4 .snapshoot2 img {
-  margin: 0 0 0 -12%;
+  
 }
 
 .card3 .snapshoot1 img {
@@ -312,8 +380,6 @@ ul {
 
 .tonic-title-frame .client {
   font-style: normal;
-  margin-left: -50px;
-  margin-top: -20px;
   font-size: 13px;
   font-weight: 600;
   color: hsl(218, 31%, 30%);
@@ -321,8 +387,6 @@ ul {
 }
 
 .tonic-title-frame .counter {
-  margin-left: -10px;
-  margin-top: -20px;
   width: 8px;
   height: 8px;
   color: hsl(216, 14%, 79%);
@@ -330,8 +394,6 @@ ul {
 
 .tonic-title-frame .role {
   font-style: normal;
-  margin-left: -50px;
-  margin-top: -20px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -341,8 +403,6 @@ ul {
 
 .tonic-title-frame .year {
   font-style: normal;
-  margin-left: -60px;
-  margin-top: -20px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -350,50 +410,19 @@ ul {
   list-style: none;
 }
 
-.text-desc p {
-  width: 295px;
-  height: 76px;
-  padding-top: 10px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: hsl(218, 31%, 30%);
-  margin: 23px 0 13px -35px;
-}
-
-.btn {
-  width: 295px;
-  height: 72px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  position: relative;
-  left: -20px;
-  top: 90px;
-}
-
-.btn button {
-  box-sizing: border-box;
+.about {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  position: absolute;
-  width: 124px;
-  height: 48px;
-  border: 1px solid hsl(234, 100%, 69%);
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: hsl(223, 88%, 59%);
-  padding-left: 10px;
-  margin-top: -39px;
+  padding: 114px 24px;
+  gap: 24px;
+  position: absolute;
+  width: 375px;
+  height: 1125.15px;
+  left: calc(50% - 375px/2);
+  top: 3506px;
 }
+
 
 .title2 h1 {
   align-items: center;
@@ -405,7 +434,6 @@ ul {
   line-height: 52px;
   color: hsl(218, 54%, 20%);
   display: flex;
-  margin-left: -22px;
 }
 
 .presentation2 .intro2 {
@@ -422,7 +450,6 @@ ul {
 
 .connect2 {
   padding-bottom: 1em;
-  margin: 0 0 0 -205px;
 }
 
 .connect2 .text2 {
@@ -432,51 +459,34 @@ ul {
 .social-icons2 {
   height: 20px;
   display: flex;
-  margin: -0.5rem -35px;
   align-items: center;
   justify-content: space-between;
   width: 11rem;
   position: relative;
-  top: -1px;
   list-style: none;
   left: 186px;
 }
 
-.language-btn {
-  width: 161px;
-  height: 55px;
+.resume{
+  padding: 0px;
+}
+.resume .language-btn {
+  width: 162px;
+  height: 48px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
-  margin: 80px 0 2px 0;
-  position: relative;
-  left: -86px;
   padding-left: 10px;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 114px 24px;
-  gap: 24px;
-  margin: 0 0 0 -45px;
-  position: relative;
-  left: 20px;
-}
-
 .title2 {
-  margin-top: -45px;
-  margin-left: -30px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -484,51 +494,6 @@ ul {
 .presentation2 {
   width: 327px;
   height: 146px;
-  margin-left: -30px;
-}
-
-.tags ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  gap: 8px;
-  margin: -3px 0 0 -51px;
-}
-
-.tags li {
-  float: left;
-}
-
-.tags ul :nth-child(1),
-.tags ul :nth-child(2) {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2em;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background: #ebebff;
-  border-radius: 8px;
-  width: 53px;
-  height: 24px;
-  text-align: center;
-}
-
-.tags ul :nth-child(3),
-.tags ul :nth-child(4) {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2em;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background: #ebebff;
-  border-radius: 8px;
-  width: 77px;
-  height: 24px;
-  text-align: center;
 }
 
 button:active {
@@ -553,7 +518,6 @@ button:active {
   background: #f7f7f9;
   border-radius: 8px;
   padding-left: 18px;
-  margin: 34px -92px 35px -34px;
   height: 74px;
 }
 
@@ -583,7 +547,6 @@ button:active {
 
 .programing-languages {
   display: flex;
-  margin: 0 -89px 0 0;
 }
 
 .programing-languages p {
@@ -598,7 +561,6 @@ button:active {
   line-height: 24px;
   display: flex;
   align-items: center;
-  margin: 0 0 -2px -10px;
   color: hsl(0, 0%, 0%);
 }
 
@@ -609,23 +571,18 @@ button:active {
 
 .frameworks p {
   position: relative;
-  top: -21px;
-  left: 24px;
+ 
   margin-top: 33px;
 }
 
 .contact {
   background: hsl(234, 100%, 69%);
   border-top-left-radius: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
   width: 375px;
-  height: 880px;
-  position: relative;
-  left: -8px;
-  top: -12px;
-  padding: 0;
+  height: 779px;
+  left: 0px;
+  top: 5410px;
 }
 
 .contact-container {
@@ -633,13 +590,10 @@ button:active {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  position: relative;
-  top: 19px;
-  left: 23px;
+
 }
 
 form {
-  left: -50px;
   position: relative;
   margin-top: 45px;
   display: flex;
@@ -650,7 +604,6 @@ form {
 .contact h2,
 .para {
   position: relative;
-  left: -29px;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -716,8 +669,6 @@ form .button {
   color: hsl(234, 100%, 69%);
   background: white;
   position: relative;
-  top: -18px;
-  left: 30px;
 }
 
 form .line {
@@ -1033,13 +984,6 @@ form .line {
   .language-btn {
     position: relative;
     left: 23px;
-  }
-
-  .resume {
-    position: relative;
-    left: -601px;
-    top: 130px;
-    margin-left: 224px;
   }
 
   .resume:hover {
