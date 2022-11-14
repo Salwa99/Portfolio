@@ -32,15 +32,18 @@ nav {
   top: 2px;
 }
 
-.logo {
+/* .logo {
   position: absolute;
   width: 100px;
   height: 40px;
   left: 12px;
   
+} */
+.head{
+  display: flex;
+  justify-content: space-between;
 }
-
-.logo .myLogo a {
+/* .logo .myLogo a {
   width: 76px;
   height: 20px;
   padding-left: 24px;
@@ -49,10 +52,10 @@ nav {
   font-size: 18px;
   line-height: 20px;
   color: hsl(234, 100%, 69%);
-}
+} */
 
 .text1 a {
-  position: relative;
+  /* position: relative; */
   top: 2px;
   color: hsl(234, 100%, 75%);
 }
@@ -67,10 +70,35 @@ nav {
   text-decoration: none;
 }
 
-
-ul {
+.desktop-menu{
   display: none;
 }
+.menuformobile{
+  /* z-index: 999; */
+  margin-top: -90px;
+  display: none;
+  flex-direction: column;
+  height: 110vh;
+  width: 100vw;
+  background-color:black;
+}
+.mobile-menu{
+margin-top: 100px;
+}
+.closeicon{
+  display: none;
+}
+.mobile-menu li{
+  margin-left: 24px;
+  list-style: none;
+  font-size: 32px;
+}
+.mobile-menu a{
+color: white;
+}
+/* ul {
+  display: none;
+} */
 
 .info {
   background: url("../style/img/header-shapes\ mobile.png");
@@ -80,7 +108,7 @@ ul {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  position: absolute;
+  /* position: absolute; */
   width: 375px;
   height: 604px;
   left: calc(50% - 375px/2);
@@ -747,7 +775,7 @@ form .line {
   }
 
   .text1 a {
-    position: relative;
+    /* position: relative; */
     top: -7px;
     color: hsl(234, 100%, 75%);
     margin-left: 319px;
