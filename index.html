@@ -31,13 +31,14 @@
             <div class="hamburger">
                 <img class="openicon" onclick="OpenMenu()" src="style/img/hamburger-vactors.png">
 
-                <img class="closeicon" onclick="CloseMenu()" src="style/img/Icon.png" alt="close_icon">
             </div>
             <div class="menuformobile">
+                <img class="closeicon" onclick="CloseMenu()" src="style/img/Icon.png" alt="close_icon">
+
                 <ul class="mobile-menu">
-                    <li><a href="#Home">Portfolio</a></li>
-                    <li><a href="#about-section">about</a></li>
-                    <li><a href="#contact-section">contact</a></li>
+                    <li><a id="portfolio-link"  href="#portfolio-section">Portfolio</a></li>
+                    <li><a id="about-link" href="#about-section">about</a></li>
+                    <li><a id="contact-link"  href="#contact-section">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -74,7 +75,7 @@
         </section>
 
         <!--Project illustration-->
-        <section class="allcards" id="Home">
+        <section class="allcards" id="portfolio-section">
             <div class="card1">
                 <div class="snapshoot1">
                     <img src="./style/img/Snapshoot Portfolio.png" alt="Snapshoot Portfolio.png" class="snapshoot-pic">

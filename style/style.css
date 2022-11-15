@@ -42,8 +42,6 @@ nav {
 }
 
 .head .myLogo a {
-  width: 76px;
-  height: 20px;
   padding-left: 24px;
   font-style: normal;
   font-weight: 700;
@@ -73,21 +71,29 @@ nav {
 }
 
 .menuformobile {
+  z-index: 999;
+  position: fixed;
   margin-top: -90px;
   display: none;
   flex-direction: column;
-  height: 90vh;
-  width: 110vw;
-  background-color: hsl(234, 100%, 69%);
+  height: 125vh;
+  width: 100vw;
+  background-color: rgba(96, 112, 255, 0.7);
+
 }
 
 .mobile-menu {
+  z-index: 999;
   margin-top: 100px;
-  transition: 0.3s;
 }
 
 .closeicon {
-  display: none;
+  margin-top: 100px;
+  margin-right: 50px;
+  width: 20px;
+  margin-left: auto;
+  z-index: 999;
+  top: 50px;
 }
 
 .mobile-menu li {
@@ -694,8 +700,6 @@ form .line {
 
   .myLogo {
     position: absolute;
-    width: 100px;
-    height: 40px;
     left: 143px;
   }
 
@@ -717,6 +721,19 @@ form .line {
     left: 1039px;
     top: 16px;
     list-style: none;
+  }
+
+  body{
+    background: transparent !important;
+  }
+
+  .info{
+    filter: blur(0) !important;
+  }
+
+  .menuformobile{
+    display: none;
+    visibility: hidden;
   }
 
   .desktop-menu li a {
