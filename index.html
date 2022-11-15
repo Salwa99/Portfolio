@@ -20,31 +20,33 @@
         <nav>
             <div class="head">
                 <h3 class="myLogo">
-                    <a href="#Home">My Logo</a>
+                    <a id="Home">My Logo</a>
                 </h3>
                 <ul class="desktop-menu">
-                   
-                </ul>
-            </div>
-            <div class="hamburger">
-                <img onclick="OpenMenu()" src="style/img/hamburger-vactors.png">
-
-                <img class="closeicon" onclick="CloseMenu()" src="style/img/Icon.png" alt="">
-            </div>
-            <div class="menuformobile">
-                <ul class="mobile-menu">
-                    <li><a href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#Home">Portfolio</a></li>
                     <li><a href="#about-section">about</a></li>
                     <li><a href="#contact-section">contact</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <img class="openicon" onclick="OpenMenu()" src="style/img/hamburger-vactors.png">
 
+                <img class="closeicon" onclick="CloseMenu()" src="style/img/Icon.png" alt="close_icon">
+            </div>
+            <div class="menuformobile">
+                <ul class="mobile-menu">
+                    <li><a href="#Home">Portfolio</a></li>
+                    <li><a href="#about-section">about</a></li>
+                    <li><a href="#contact-section">contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
 
     <main>
         <section class="info">
+        <div class="headline">
             <div class="title1">
                 <h1>I'm Salwa <br>Glad to see you!</h1>
             </div>
@@ -59,6 +61,7 @@
             <div class="text1">
                 <a href="#">LET'S CONNECT </a>
             </div>
+        </div>
             <div>
                 <ul class="social-icons1">
                     <li><a href="#"><img src="./style/img/github.png" alt="github"></a></li>
@@ -71,7 +74,7 @@
         </section>
 
         <!--Project illustration-->
-        <section class="allcards" id="portfolio-section">
+        <section class="allcards" id="Home">
             <div class="card1">
                 <div class="snapshoot1">
                     <img src="./style/img/Snapshoot Portfolio.png" alt="Snapshoot Portfolio.png" class="snapshoot-pic">
@@ -138,7 +141,7 @@
             </div>
             <div class="card3">
                 <div class="snapshoot1">
-                    <img src="./style/img/desktop/multi-post-stories-project.png" alt="Snapshoot Portfolio.png"
+                    <img src="./style/img/Snapshoot Portfolio3.png" alt="Snapshoot Portfolio.png"
                         class="snapshoot-pic">
                 </div>
                 <div class="snapshoot2">
@@ -237,6 +240,7 @@
             <div class="resume">
                 <button type="button" class="language-btn">Get my resume</button>
             </div>
+            <div class="bloc-r">
             <div class="about-right">
                 <div class="programing-part">
                     <div class="programing-languages">
@@ -284,6 +288,7 @@
                 </div>
             </div>
             <img src="./style/img/Separator Bottom.png" alt="separater" class="line-hr">
+        </div>
         </section>
     </main>
 
