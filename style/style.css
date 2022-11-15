@@ -38,7 +38,7 @@ nav {
   position: absolute;
   width: 100px;
   height: 40px;
-  left: 12px;
+  left: 24px;
 }
 
 .mobile-menu a {
@@ -74,6 +74,7 @@ nav {
   font-size: 18px;
   line-height: 20px;
   color: hsl(234, 100%, 69%);
+  cursor: pointer;
 }
 
 .menuformobile {
@@ -346,6 +347,7 @@ nav {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
+  cursor: pointer;
 }
 
 .chevron1,
@@ -693,6 +695,8 @@ form .line {
   .myLogo {
     position: absolute;
     left: 143px;
+    width: 77px;
+    top: 17px;
   }
 
   .hamburger {
@@ -710,9 +714,17 @@ form .line {
     justify-content: space-between;
     width: 259px;
     height: 40px;
-    left: 1039px;
+    left: 1332px;
     top: 16px;
     list-style: none;
+  }
+
+  .desktop-menu li a{
+    transition: all 0.4s ease-in-out;
+  }
+
+  .desktop-menu li a:hover{
+    color: rgb(152, 73, 255);
   }
 
   .menuformobile {
@@ -740,11 +752,6 @@ form .line {
     align-items: center;
     text-align: center;
     color: #344563;
-    transition: 0.7s ease;
-  }
-
-  .desktop-menu li a:hover {
-    color: aqua;
   }
 
   .info {
@@ -752,8 +759,8 @@ form .line {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    width: 1440px;
-    height: 916px;
+    max-width: 1440px;
+    max-height: 916px;
     left: 0;
     top: 71px;
     filter: blur(0) !important;
@@ -797,62 +804,7 @@ form .line {
     width: 170.17px;
     height: 20px;
     left: 260px;
-    top: 597px;
-  }
-
-  .text1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 16px;
-  }
-
-  .allcards {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 144px;
-    left: 166px;
-    width: 1156px;
-    height: 496px;
-    background: #fff;
-    border: 2px solid #a7aeff;
-    border-radius: 24px;
-    margin-top: 144px;
-  }
-
-  .snapshoot1 {
-    display: none;
-  }
-
-  .snapshoot2 {
-    display: flex;
-    position: absolute;
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
-  }
-
-  .left-block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .allcards > .card1,
-  .card3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 46px;
-  }
-
-  .allcards > .card2,
-  .card4 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 46px;
+    top: 448px;
   }
 
   .tonic-title-frame2 .break {
@@ -863,196 +815,61 @@ form .line {
     display: flex;
   }
 
-  .text-desc p {
-    font-size: 16px;
-    float: left;
-    margin-top: 45px;
-    margin-left: 0;
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0;
+    gap: 16px;
   }
 
-  .tonic-ul {
-    float: left;
-    width: 100%;
+  /* Display project */
+
+  .allcards {
+    display: grid;
+    margin-left: 180px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+    min-width: 1156px;
     height: auto;
+    margin-left: 114px;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(223, 12%, 89%);
+    border-radius: 16px;
   }
 
-  ul.tonic-ul {
-    margin: 0;
+  .card2,
+  .card4 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 76px;
+    
   }
 
-  .tonic-ul li {
-    font-size: 18px;
-    font-weight: 400;
-    width: auto;
+  .snapshoot1 {
+   display: flex;
+    width: 544px;
+    height: 448px;
+
   }
 
-  .tonic-title-frame1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .tonic-title-frame1 h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  .tonic-title-frame2 h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  .tags ul {
-    float: left;
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .tags ul .tag-pl {
-    width: auto;
-    padding: 4px 12px;
-    line-height: 12px;
-  }
-
-  .btn button {
-    margin: 0;
-  }
-
-  .btn {
-    margin-left: 25px;
+  .left-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 46px;
+    width: 544px;
+    height: 445px;
   }
 
   /* About myself */
 
-  .about {
-    width: 100%;
-    height: auto;
-  }
-
-  .bloc-l {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    width: 447px;
-    height: 320px;
-  }
-
-  .about > .bloc-l,
-  .bloc-r {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .title2 h1 {
-    width: 447px;
-    height: 114px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    margin-left: 142px;
-  }
-
-  .bloc-l .presentation1 {
-    width: 447px;
-    height: 102px;
-    font-size: 16px;
-    font-weight: 400;
-    font-weight: 24px;
-    position: absolute;
-    top: 224px;
-    left: 179px;
-  }
-
-  .bloc-l .text1 {
-    position: absolute;
-    top: 330px;
-    left: 178px;
-  }
-
-  .bloc-l .social-icons1 {
-    position: absolute;
-    top: 95mm;
-    left: 175px;
-  }
-
-  .resume {
-    position: absolute;
-    left: 45mm;
-  }
-
-  .resume .language-btn {
-    cursor: pointer;
-  }
-
-  .resume .language-btn:hover {
-    transition: all 0.3s ease-in;
-    color: aqua;
-  }
-
-  .bloc-r {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 447px;
-    height: 320px;
-  }
-
-  .programing-part {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .programing-languages {
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .programing-languages p {
-    color: #344563;
-  }
-
-  .lang-icons {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .lang-icons .icon {
-    flex-direction: column;
-    width: 122px;
-    height: 120px;
-    align-items: flex-start;
-  }
-
-  .lang-icons .html {
-    margin-left: 112px;
-  }
-
-  .lang-icons .css {
-    margin-left: 112px;
-  }
-
-  .line-hr {
-    width: 710px;
-  }
-
-  .myskills {
-    margin-bottom: 20px;
-  }
-
-  .myskills p {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #344563;
-  }
-
-  /* Contact me Form */
+  /*Contact me*/
   .contact {
     background: hsl(234, 100%, 69%);
     border-top-left-radius: 186px;
@@ -1084,7 +901,6 @@ form .line {
     align-items: center;
     position: relative;
     left: 2px;
-    margin-left: -90px;
   }
 
   form input,
@@ -1102,4 +918,6 @@ form .line {
   .line {
     display: none;
   }
+
+
 }
