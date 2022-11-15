@@ -1,7 +1,7 @@
 const linkPortfolio = document.querySelector('#portfolio-link')
 const linkAbout = document.querySelector('#about-link')
 const linkContact = document.querySelector('#contact-link')
-
+/* eslint-disable no-unused-vars */
 function OpenMenu(){
     document.querySelector('.menuformobile').style.display = "flex"
     document.querySelector('.closeicon').style.display = "block"
@@ -13,7 +13,7 @@ function OpenMenu(){
 
 }
 function CloseMenu(){
-    document.querySelector('.menuformobile').style.display = "none"
+    
     document.querySelector('.closeicon').style.display = "none"
     document.querySelector('.openicon').style.display = "block"
     document.querySelector('.myLogo').style.display = "flex"

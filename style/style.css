@@ -10,18 +10,18 @@
 
 header {
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 nav {
   position: absolute;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   top: 44px;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .hamburger {
@@ -41,17 +41,19 @@ nav {
   left: 12px;
 }
 
-.head .myLogo a {
-  
+.mobile-menu a {
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: hsl(234, 100%, 69%);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 23px;
 }
 
 .text1 a {
-  position: relative; 
+  position: relative;
   top: 2px;
   color: hsl(234, 100%, 75%);
 }
@@ -66,8 +68,12 @@ nav {
   text-decoration: none;
 }
 
-.desktop-menu {
-  display: none;
+.head .myLogo a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: hsl(234, 100%, 69%);
 }
 
 .menuformobile {
@@ -79,7 +85,6 @@ nav {
   height: 125vh;
   width: 100vw;
   background-color: rgba(96, 112, 255, 0.7);
-
 }
 
 .mobile-menu {
@@ -102,18 +107,7 @@ nav {
   font-size: 32px;
 }
 
-.mobile-menu a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-  padding: 23px;
-}
-
- .desktop-menu{
+.desktop-menu {
   display: none;
 }
 
@@ -128,7 +122,7 @@ nav {
   position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% -  375px/2);
+  left: calc(50% - 375px / 2);
   top: 92px;
 }
 
@@ -187,7 +181,7 @@ nav {
   position: absolute;
   width: 375px;
   height: 2788px;
-  left: 0px;
+  left: 0;
   top: 718px;
 }
 
@@ -202,7 +196,7 @@ nav {
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 596px;;
+  height: 596px;
   background: hsl(0, 0%, 100%);
   border: 1px solid hsl(223, 12%, 89%);
   border-radius: 16px;
@@ -224,7 +218,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
 }
 
@@ -305,7 +299,7 @@ nav {
 .tags {
   width: 203px;
   height: 24px;
-  padding-top: 16PX;
+  padding-top: 16px;
 }
 
 .tags ul {
@@ -317,7 +311,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .tags ul .tag-pl {
@@ -345,14 +338,14 @@ nav {
   box-sizing: border-box;
   width: 124px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
 }
 
 .chevron1,
@@ -365,7 +358,7 @@ nav {
   margin-top: 16px;
 }
 
-.programing-part{
+.programing-part {
   margin-top: 60px;
 }
 
@@ -373,7 +366,7 @@ nav {
   position: absolute;
   left: 85%;
   top: 60.5%;
-  padding-right: 66px ;
+  padding-right: 66px;
 }
 
 .card2 .snapshoot2 img,
@@ -438,7 +431,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 117px;
   height: 24px;
@@ -451,7 +444,7 @@ nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .social-icons2 {
@@ -463,7 +456,7 @@ nav {
   height: 40px;
 }
 
-.resume{
+.resume {
   padding-top: 22px;
   display: flex;
   flex-direction: row;
@@ -514,7 +507,7 @@ button:active {
   top: 3460px;
   width: 375px;
   height: auto;
-  background: #FFFFFF;
+  background: #fff;
   padding-top: 114px;
   margin-top: 114px;
   padding-left: 12px;
@@ -598,7 +591,6 @@ button:active {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-
 }
 
 form {
@@ -623,7 +615,7 @@ form {
   text-align: center;
   color: hsl(240, 100%, 96%);
   margin-top: 12px;
-  margin-left: 0px;
+  margin-left: 0;
   width: 342px;
   height: 160px;
 }
@@ -636,7 +628,7 @@ form {
   width: 327px;
   color: hsl(240, 100%, 96%);
   margin-top: 12px;
-  PADDING-LEFT: 39px;
+  padding-left: 39px;
   padding-right: 22px;
 }
 
@@ -692,10 +684,10 @@ form .line {
 /* media query for the desktop version */
 
 @media (min-width: 768px) {
-
   body {
     width: 100%;
     box-sizing: border-box;
+    background: transparent !important;
   }
 
   .myLogo {
@@ -712,7 +704,7 @@ form .line {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 8px;
     position: absolute;
     justify-content: space-between;
@@ -723,17 +715,17 @@ form .line {
     list-style: none;
   }
 
-  body{
-    background: transparent !important;
-  }
-
-  .info{
-    filter: blur(0) !important;
-  }
-
-  .menuformobile{
+  .menuformobile {
     display: none;
     visibility: hidden;
+  }
+
+  .text1 a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
   }
 
   .desktop-menu li a {
@@ -762,21 +754,22 @@ form .line {
     position: absolute;
     width: 1440px;
     height: 916px;
-    left: 0px;
+    left: 0;
     top: 71px;
+    filter: blur(0) !important;
   }
 
   .headline {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     position: absolute;
     width: 920px;
     height: 268px;
     left: 260px;
-    top: calc(50% - 268px/2);
+    top: calc(50% - 268px / 2);
   }
 
   .title1 h1 {
@@ -788,8 +781,7 @@ form .line {
     letter-spacing: 0.37px;
   }
 
-  .presentation1 .intro1 { 
-    font-size: 20px;
+  .presentation1 .intro1 {
     line-height: 28px;
     width: 920px;
     height: 98px;
@@ -806,28 +798,14 @@ form .line {
     height: 20px;
     left: 260px;
     top: 597px;
-    
   }
 
   .text1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 16px;
-  }
-
-  .text1 a {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
-  }
-
-  .social-icons1 {
-    width: 170.17px;
-    height: 20px;
   }
 
   .allcards {
@@ -837,8 +815,8 @@ form .line {
     left: 166px;
     width: 1156px;
     height: 496px;
-    background: #FFFFFF;
-    border: 2px solid #A7AEFF;
+    background: #fff;
+    border: 2px solid #a7aeff;
     border-radius: 24px;
     margin-top: 144px;
   }
@@ -901,7 +879,6 @@ form .line {
 
   ul.tonic-ul {
     margin: 0;
-    
   }
 
   .tonic-ul li {
@@ -952,11 +929,6 @@ form .line {
     width: 100%;
     height: auto;
   }
-  .about > .bloc-l,
-  .bloc-r{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
 
   .bloc-l {
     display: flex;
@@ -967,6 +939,12 @@ form .line {
     height: 320px;
   }
 
+  .about > .bloc-l,
+  .bloc-r {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
   .title2 h1 {
     width: 447px;
     height: 114px;
@@ -974,9 +952,8 @@ form .line {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
     margin-left: 142px;
-    
   }
 
   .bloc-l .presentation1 {
@@ -987,7 +964,7 @@ form .line {
     font-weight: 24px;
     position: absolute;
     top: 224px;
-    left: 179px
+    left: 179px;
   }
 
   .bloc-l .text1 {
@@ -1007,13 +984,13 @@ form .line {
     left: 45mm;
   }
 
+  .resume .language-btn {
+    cursor: pointer;
+  }
+
   .resume .language-btn:hover {
     transition: all 0.3s ease-in;
     color: aqua;
-  }
-
-  .resume .language-btn {
-    cursor: pointer;
   }
 
   .bloc-r {
@@ -1052,14 +1029,6 @@ form .line {
     align-items: flex-start;
   }
 
-  .icon p {
-    
-  }
-
-  .icon img {
-   
-  }
-
   .lang-icons .html {
     margin-left: 112px;
   }
@@ -1070,16 +1039,10 @@ form .line {
 
   .line-hr {
     width: 710px;
-   
   }
 
   .myskills {
-   
     margin-bottom: 20px;
-  }
-
-  .myskills img {
-   
   }
 
   .myskills p {
@@ -1099,7 +1062,6 @@ form .line {
     width: 100%;
     height: 880px;
     position: relative;
-   
     padding: 0;
   }
 
@@ -1121,7 +1083,6 @@ form .line {
     display: flex;
     align-items: center;
     position: relative;
-    
     left: 2px;
     margin-left: -90px;
   }
