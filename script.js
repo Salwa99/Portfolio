@@ -45,3 +45,16 @@ linkContact.addEventListener('click', () => {
     document.querySelector('.info').style.filter = " blur(0)"
     document.querySelector('body').style.backgroundColor = "transparent"
 })
+
+/* pop-up window*/
+document.getElementById('see-project').addEventListener('click',
+    function(){
+        document.querySelector('.bg-model').style.display = 'flex';
+}
+);
+
+document.querySelector('.closeicon1').addEventListener('click',
+    function(){
+        document.querySelector('.bg-model').style.display = 'none';
+}
+);

@@ -516,9 +516,9 @@ button:active {
   margin-left: 24px;
 }
 
-.js,
-.html,
-.css {
+.icon-js,
+.icon-html,
+.icon-css {
   width: 327px;
   display: flex;
   flex-direction: column;
@@ -529,9 +529,9 @@ button:active {
   border-radius: 8px;
 }
 
-.js p,
-.html p,
-.css p {
+.icon-js p,
+.icon-html p,
+.icon-css p {
   position: absolute;
   left: 78px;
   margin-top: -56px;
@@ -813,6 +813,9 @@ form .line {
 
   .tags .ruby {
     display: flex;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .text1 {
@@ -869,7 +872,111 @@ form .line {
 
   /* About myself */
 
-  /*Contact me*/
+  .about {
+    margin-left: 314px;
+    display: flex;
+    gap: 44px;
+  }
+
+  .bloc-r {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    position: absolute;
+    height: auto;
+    left: 614px;
+    top: 17mm;
+  }
+
+ .bloc-l {
+    display :flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about .intro1 {
+    width: 447px;
+    height: 392px;
+  }
+
+  .about .text1 {
+    margin-top: 42px;
+  }
+
+  .about .social-icons1 {
+    position: absolute;
+    left: 4mm;
+    top: 420px;
+
+  }
+
+  .about .resume {
+    position: absolute;
+    top: 480px;
+  }
+
+  .resume .language-btn {
+    cursor: pointer;
+  }
+
+  .resume .language-btn:hover {
+    transition: all 0.3s ease-in;
+    color: aqua;
+  }
+
+  .lang-icons {
+    display: flex;
+    gap: 86px;
+  }
+
+  .icon-js,
+  .icon-html,
+  .icon-css {
+    list-style: none;
+    padding-top: 15px;
+    width: 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  } 
+
+  .myskills {
+    margin-top: 86px;
+  }
+
+  .programing-languages img {
+    position: absolute;
+    top: 65px;
+   
+  }
+
+  .frameworks .frameworks, .myskills{
+    margin-top: 50px;
+  }
+
+  .myskills .chevron1,
+  .chevron2 {
+    margin-left: 25px;
+  }
+
+  .myskills .chevron1 img {
+    position: absolute;
+    left: 510px;
+  }
+
+  .myskills .chevron2 img {
+    position: absolute;
+    left: 510px;
+  }
+
+  .line-hr {
+    width: 574px;
+  }
+
+  /*contact me*/
+
   .contact {
     background: hsl(234, 100%, 69%);
     border-top-left-radius: 186px;
@@ -913,11 +1020,168 @@ form .line {
 
   form .button {
     margin-top: 35px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  form .button:hover {
+    color: aqua;
   }
 
   .line {
     display: none;
   }
+
+  /* pop up window */
+  /* .bg{
+    position: fixed;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
+
+  } */
+  .bg-model {
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(96, 112, 255, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+ 
+  .model-content {
+    width: 1156px;
+    height: 1163px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #EBECF0;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .closeicon1{
+    position: absolute;
+    right: 23%;
+    top: 20%;
+    font-size: 30px;
+    transform: rotate(90deg);
+    color: #67798E;
+    cursor: pointer;
+  }
+
+  .tonic-title-popup {
+    width: 1108px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    gap: 8px;
+  }
+
+  .tonic-title-popup h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091E42;
+  }
+
+  .ul-popup {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+  }
+
+  .ul-popup .role-popup,
+  .year-popup {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7A869A;
+  }
+
+  .ul-popup .client-popup {
+    list-style: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .snapshoot img{
+    width: 1070px;
+    height: 586px;
+    position: absolute;
+    right: 426px;
+  }
+
+  .block-bottom {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 778px;
+    height: 382px;
+    top: 1096px;
+    margin-left: 33px;
+
+  }
+
+  .left p{
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    position: absolute;
+    left: 210mm;
+    width: 306px;
+    height: auto;
+  }
+
+  .icon-popup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    list-style-type: none;
+  }
+
+  .icon-popup li{
+    color: #6070FF;;
+    background: #EBEBFF;
+    border-radius: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .see {
+    width: 142px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    color: #7f8cff;
+    cursor: pointer;
+  }
+ 
 
 
 }
