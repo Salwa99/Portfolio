@@ -12,6 +12,10 @@ message: MessageValue.value,
 localStorage.setItem('userData', JSON.stringify(formData));
 });
 
+const GetDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+NameValue.value = GetDataFromLocalStorage.name;
+EmailValue.value = GetDataFromLocalStorage.email;
+MessageValue.value = GetDataFromLocalStorage.message;
 
 const linkPortfolio = document.querySelector('#portfolio-link');
 const linkAbout = document.querySelector('#about-link');
@@ -45,29 +49,6 @@ linkContact.addEventListener('click', () => {
   document.querySelector('main').style.filter = ' blur(0)';
   document.querySelector('header').style.filter = ' blur(0)';
 });
-
-// Local storage
-
-  //  const input1 = documet.getElementById('name');
-  //  input1.addEventListener("keyup", storage);
-  //  function storage() {
-
-  //    localStorage.setItem('value1', input1.value);
-  //   console.log(localStorage.getItem("value1"))
-  //  }
-
-
-// Local storage
-
-  //  const input1 = documet.getElementById('name');
-  //  input1.addEventListener("keyup", storage)
-  //  function storage() 
-  //    localStorage.setItem('value1', input1.value);
-  //    console.log(localStorage.getItem("value1"))
-  //  }
-
-
-// validation function
 
 function validate() {
 
