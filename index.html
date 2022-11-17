@@ -305,18 +305,19 @@
                         I’d love to help with it
                     </p>
                 </div>
-                <form action="https://formspree.io/f/mayklwek" method="POST">
+                <form action="https://formspree.io/f/mayklwek" method="POST" id="form">
                     <label for="user-name">
-                        <input type="text" name="user-name" placeholder="Yeremias" max="30" required>
+                        <input type="text" id =user-name name="user-name" placeholder="Yeremias" max="30" required>
                     </label>
                     <label for="email">
-                        <input type="email" name="email" placeholder="natajayanj14@gmail.com" required>
+                        <input type="email" id ="email" name="email" placeholder="natajayanj14@gmail.com" required> <br>
+                        <label id="msg1" class="msg1">Invalid</label>
                     </label>
                     <label for="msg">
                         <textarea name="msg" placeholder="Write your messege" id="message" maxlength="500"
                             required></textarea>
                     </label><br>
-                    <button type="submit" class="button">Get It Touch</button>
+                    <button type="submit" onclick="validate()" class="button">Get It Touch</button>
                     <span class="line"></span>
                 </form>
             </div>
@@ -328,7 +329,7 @@
         <div class="model-content">
 
             <div class="tonic-title-popup">
-                <div class="closeicon1">X</div>
+                <div class="closeicon1">+</div>
                 <h2>Tonic</h2>
                 <ul class="ul-popup">
                     <li class="client-popup">Canopy</li>

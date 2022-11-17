@@ -683,6 +683,10 @@ form .line {
   margin-left: 95px;
 }
 
+.bg-model {
+  display: none;
+}
+
 /* media query for the desktop version */
 
 @media (min-width: 768px) {
@@ -719,19 +723,6 @@ form .line {
     list-style: none;
   }
 
-  .desktop-menu li a{
-    transition: all 0.4s ease-in-out;
-  }
-
-  .desktop-menu li a:hover{
-    color: rgb(152, 73, 255);
-  }
-
-  .menuformobile {
-    display: none;
-    visibility: hidden;
-  }
-
   .text1 a {
     font-style: normal;
     font-weight: 500;
@@ -752,6 +743,16 @@ form .line {
     align-items: center;
     text-align: center;
     color: #344563;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .desktop-menu li a:hover {
+    color: rgb(90, 231, 250);
+  }
+
+  .menuformobile {
+    display: none;
+    visibility: hidden;
   }
 
   .info {
@@ -833,7 +834,10 @@ form .line {
     margin-left: 180px;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -852,14 +856,12 @@ form .line {
     display: flex;
     flex-direction: row-reverse;
     padding-right: 76px;
-    
   }
 
   .snapshoot1 {
-   display: flex;
+    display: flex;
     width: 544px;
     height: 448px;
-
   }
 
   .left-block {
@@ -881,15 +883,15 @@ form .line {
   .bloc-r {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
     position: absolute;
     height: auto;
     left: 614px;
     top: 17mm;
   }
 
- .bloc-l {
-    display :flex;
+  .bloc-l {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
@@ -907,7 +909,6 @@ form .line {
     position: absolute;
     left: 4mm;
     top: 420px;
-
   }
 
   .about .resume {
@@ -940,7 +941,26 @@ form .line {
     gap: 12px;
     background: #f7f7f9;
     border-radius: 8px;
-  } 
+  }
+
+  /* .icon-js p {
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+}
+  }
+
+ .icon-html p {
+  margin-top: 0px;
+  position: absolute;
+  left: 201px;
+  }
+
+  .icon-css p {
+    margin-top: 0px;
+    position: absolute;
+    left: 390px;
+  } */
 
   .myskills {
     margin-top: 86px;
@@ -949,11 +969,18 @@ form .line {
   .programing-languages img {
     position: absolute;
     top: 65px;
-   
   }
 
-  .frameworks .frameworks, .myskills{
+  .frameworks .frameworks,
+  .myskills {
     margin-top: 50px;
+  }
+
+  .snapshoot img {
+    width: 1070px;
+    height: 586px;
+    position: absolute;
+    right: 426px;
   }
 
   .myskills .chevron1,
@@ -975,7 +1002,7 @@ form .line {
     width: 574px;
   }
 
-  /*contact me*/
+  /* contact me */
 
   .contact {
     background: hsl(234, 100%, 69%);
@@ -1032,7 +1059,13 @@ form .line {
     display: none;
   }
 
+  .msg1 {
+    color: red;
+    visibility: hidden;
+  }
+
   /* pop up window */
+
   /* .bg{
     position: fixed;
     -webkit-filter: blur(5px);
@@ -1046,28 +1079,27 @@ form .line {
     background-color: rgba(96, 112, 255, 0.7);
     position: absolute;
     top: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
   }
- 
+
   .model-content {
     width: 1156px;
     height: 1163px;
     background: rgb(255, 255, 255);
-    border: 1px solid #EBECF0;
+    border: 1px solid #ebecf0;
     border-radius: 16px;
     text-align: center;
   }
 
-  .closeicon1{
+  .closeicon1 {
     position: absolute;
     right: 23%;
     top: 20%;
     font-size: 30px;
-    transform: rotate(90deg);
-    color: #67798E;
+    transform: rotate(45deg);
+    color: #67798e;
     cursor: pointer;
   }
 
@@ -1086,7 +1118,7 @@ form .line {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .ul-popup {
@@ -1100,7 +1132,7 @@ form .line {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #7A869A;
+    color: #7a869a;
   }
 
   .ul-popup .client-popup {
@@ -1111,13 +1143,6 @@ form .line {
     color: #344563;
   }
 
-  .snapshoot img{
-    width: 1070px;
-    height: 586px;
-    position: absolute;
-    right: 426px;
-  }
-
   .block-bottom {
     display: flex;
     flex-direction: row;
@@ -1126,10 +1151,9 @@ form .line {
     height: 382px;
     top: 1096px;
     margin-left: 33px;
-
   }
 
-  .left p{
+  .left p {
     text-align: start;
     font-weight: 400;
     font-size: 16px;
@@ -1141,7 +1165,7 @@ form .line {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     position: absolute;
     left: 210mm;
@@ -1156,9 +1180,9 @@ form .line {
     list-style-type: none;
   }
 
-  .icon-popup li{
-    color: #6070FF;;
-    background: #EBEBFF;
+  .icon-popup li {
+    color: #6070ff;
+    background: #ebebff;
     border-radius: 8px;
   }
 
@@ -1176,12 +1200,9 @@ form .line {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    border: 1px solid #6070FF;
+    border: 1px solid #6070ff;
     border-radius: 8px;
     color: #7f8cff;
     cursor: pointer;
   }
- 
-
-
 }
