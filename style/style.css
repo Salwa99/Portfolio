@@ -118,7 +118,7 @@ header {
 #headsection {
   width: 100%;
   height: calc(100vh - 48px);
-  background-image: url("img/header-shapes\ mobile.svg");
+  background-image: url("img/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 114px;
@@ -236,7 +236,7 @@ header {
 }
 
 .project-title {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
   color: #172b4d;
   margin-top: 30px;
@@ -356,7 +356,7 @@ header {
 }
 
 .container {
-  background-image: url("images/contact\ form\ shapes-mobile.svg");
+  background-image: url("img/cont-image.png");
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position: bottom -30px right -16px;
@@ -414,7 +414,7 @@ header {
   min-height: 140px;
   padding: 10px;
   margin: 10px 0;
-  color: #b3bac5;
+  color: #242a33;
   font-family: 'Poppins', sans-serif;
   line-height: 20px;
   width: 100%;
@@ -476,14 +476,8 @@ header {
     padding: 15px 142px;
   }
 
-  header .nav-menubar h2:hover {
-    background-color: #6070ff;
-    padding: 17px;
-    border-radius: 5px;
-  }
-
   #headsection {
-    background-image: url("img/Header\ bg.svg");
+    background-image: url("img/desktop/Header\ bg@2x.png");
     justify-content: center;
     background-repeat: no-repeat;
     padding: 15%;
@@ -545,12 +539,12 @@ header {
     align-items: flex-start;
   }
 
-  /* ===============================*\
-           Contact me
-*\=============================== */
-
   .wrapper {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .submit-button {
+    align-self: center;
   }
 }
