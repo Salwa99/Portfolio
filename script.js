@@ -70,12 +70,14 @@ function validate() {
         if(regx.test(txt)) {
             document.getElementById("msg1").innerHTML = "Valid";
             document.getElementById("msg1").style.visibility = "visible";
-            document.getElementById("msg1").style.color = "green";
+            document.getElementById("msg1").style.color = "white";
+            document.getElementById("msg1").style.background = "green";
         }
         else{ 
             document.getElementById("msg1").innerHTML = "Invalid !!! please enter the email in lower case";
             document.getElementById("msg1").style.visibility = "visible";
-            document.getElementById("msg1").style.color = "red";
+            document.getElementById("msg1").style.color = "white";
+            document.getElementById("msg1").style.background = "red";
             e.preventDefault();
         }
     }

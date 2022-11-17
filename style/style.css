@@ -1059,8 +1059,7 @@ form .line {
     display: none;
   }
 
-  .msg1 {
-    color: red;
+  #msg1 {
     visibility: hidden;
   }
 
