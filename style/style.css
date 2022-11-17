@@ -220,7 +220,7 @@ header {
 .img {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 82vw;
   height: auto;
 }
 
@@ -440,6 +440,77 @@ header {
 .nav-menu-desktop {
   display: none;
 }
+
+
+
+
+
+
+/* Modal Styles Start Here */
+
+
+.modal-back {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  display: none;
+  top: 0;
+  position: fixed;
+  padding: 5%;
+  background-color: black;
+  height: 100vh;
+}
+
+.mainmodal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 9vh 2%;
+  background: white;
+  padding: 5%;
+}
+
+.modalclose {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.titleandclose {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalphoto {
+  width: 100%;
+}
+
+.modaltechs li {
+  list-style: none;
+}
+
+.modaldetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.techandbutton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media all and (min-width: 768px) {
   .nav-menu-desktop {
