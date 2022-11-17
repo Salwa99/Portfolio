@@ -118,7 +118,7 @@ header {
 #headsection {
   width: 100%;
   height: calc(100vh - 48px);
-  background-image: url("img/header-shapes\ mobile.svg");
+  background-image: url("img/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 114px;
