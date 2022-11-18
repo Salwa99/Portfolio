@@ -130,7 +130,11 @@ ModalSeeLive.setAttribute('href', `${projectsList[i].demoLink}`)
 }
 
 //Close Modal
-
+function CloseModal() {
+  ModalBack.style.display = 'none'
+  document.querySelector('main').style.filter = ' blur(0)';
+  document.querySelector('header').style.filter = ' blur(0)';
+  } 
 
 //Contact form Validation
 
