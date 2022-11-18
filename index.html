@@ -22,9 +22,9 @@
 
             <div class="nav-menu-desktop">
                 <ul class="menu-desktop">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a  href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
             <img onclick="OpenMenu()" class="menu-icon" src="img/hamburger-vactors.png" alt="menu">
@@ -63,10 +63,7 @@
             </div>
         </section>
 
-        <section id="portfolio-section">
-
-        </section>
-
+        <section id="portfolio-section"> </section>
 
         <section id="about-section">
             <div class="about" class="display">
@@ -129,13 +126,14 @@
                         <p id="msg1"></p>
                         <textarea class="text-form" id="message" name="message" placeholder="Write your message here"
                             maxlength="500" required></textarea>
-                        <button type="submit" class="submit-button">Get In Touch</button>
+                        <button type="submit" onclick="validate()" class="submit-button">Get In Touch</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
+<!-- The modal -->
     <div class="modal-back">
         <div class="mainmodal">
             <div class="titleandclose">
@@ -151,9 +149,7 @@
             </ul>
             <img class="modalphoto" alt="Modal Image">
             <div class="modaldetails">
-                <p class="modaldesc">
-                
-                </p>
+                <p class="modaldesc"></p>
                 <div class="techandbutton">
                     <ul class="modaltech2 technologies">
                     </ul>
