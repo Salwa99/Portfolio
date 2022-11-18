@@ -7,8 +7,8 @@
 ## Built With
 
 - HTML
-- Markdown
 - CSS
+-JavaScript
 
 
 ## Live Demo 
