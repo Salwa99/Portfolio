@@ -225,8 +225,9 @@ header {
 #company {
   font-weight: 500;
   font-size: 15px;
-  color: #344563;;
+  color: #344563;
 }
+
 .img {
   display: flex;
   flex-direction: column;
@@ -580,7 +581,7 @@ header {
     font-style: normal;
     font-weight: 500;
     color: #344563;
-    transition: all 0.4s ease-in; 
+    transition: all 0.4s ease-in;
   }
 
   header .nav-menubar .menu-desktop a:hover {
@@ -681,7 +682,6 @@ header {
     width: 55%;
     font-size: 14px;
     font-weight: 400;
-    font-size: 16px;
     line-height: 30px;
     color: #344563;
   }
