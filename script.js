@@ -8,8 +8,8 @@ const projectsList = [
     role: 'Back end dev',
     company: 'canopy',
     year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
+    sourceLink: 'https://github.com/Salwa99/Portfolio',
+    demoLink: 'https://salwa99.github.io/Portfolio/',
   },
   {
     mdltitle: 'Multi-post stories',
@@ -19,8 +19,8 @@ const projectsList = [
     role: 'Full Stack Dev',
     company: 'Facebook',
     year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
+    sourceLink: 'https://github.com/Salwa99/Portfolio',
+    demoLink: 'https://salwa99.github.io/Portfolio/',
   },
   {
     mdltitle: 'Facebook 360',
@@ -30,8 +30,8 @@ const projectsList = [
     role: 'Back end Dev',
     company: 'Facebook',
     year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
+    sourceLink: 'https://github.com/Salwa99/Portfolio',
+    demoLink: 'https://salwa99.github.io/Portfolio/',
   },
   {
     mdltitle: 'Uber Navigation',
@@ -41,8 +41,8 @@ const projectsList = [
     role: 'Lead developer',
     company: 'Uber',
     year: '2018',
-    sourceLink: 'https://prantalks.com',
-    demoLink: '#',
+    sourceLink: 'https://github.com/Salwa99/Portfolio',
+    demoLink: 'https://salwa99.github.io/Portfolio/',
   },
 
 ];
@@ -136,7 +136,7 @@ function CloseModal() {
   document.querySelector('header').style.filter = ' blur(0)';
   } 
 
-//Contact form Validation
+//Local Storage
 
 const contactForm = document.querySelector('form');
 const EmailValue = document.getElementById('email');
@@ -190,6 +190,7 @@ linkContact.addEventListener('click', () => {
   document.querySelector('header').style.filter = ' blur(0)';
 });
 
+//Contact form Validation
 function validate() {
 
   var txt = document.getElementById("email").value;
