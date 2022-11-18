@@ -35,13 +35,13 @@ const projectsList = [
   },
   {
     mdltitle: 'Uber Navigation',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
     imageLink: 'img/Snapshoot Portfolio4.png',
     technologies: ['html', 'css', 'javascript'],
     role: 'Lead developer',
     company: 'Uber',
     year: '2018',
-    sourceLink: '#',
+    sourceLink: 'https://prantalks.com',
     demoLink: '#',
   },
 
@@ -51,10 +51,13 @@ const ProjectCards = document.querySelector('#portfolio-section');
 const ModalTitle = document.querySelector('.modaltitle');
 const ModalDescription = document.querySelector('.modaldesc');
 const ModalPhoto = document.querySelector('.modalphoto');
-const ModalSeeSource = document.querySelector('.source');
-const ModalSeeLive = document.querySelector('.live');
-const ModalTech = document.querySelector('.technologies');
+const ModalSeeSource = document.querySelector('.sourcelink');
+const ModalSeeLive = document.querySelector('.livelink');
+const ModalTech2 = document.querySelector('.modaltech2');
 const ModalBack = document.querySelector('.modal-back')
+const ModalCompany = document.querySelector('#company')
+const ModalRole = document.querySelector('#role')
+const ModalYear = document.querySelector('#year')
 
 
 ProjectCards.innerHTML = '';
@@ -84,7 +87,7 @@ for (let i = 0; i < projectsList.length; i++) {
 <p class="description">${projectsList[i].description}
 </p>
 
-<ul class="technologies">
+<ul class="worktech technologies">
   ${tech_lang}
 </ul>
 <div>
@@ -99,52 +102,34 @@ for (let i = 0; i < projectsList.length; i++) {
 }
 
 
-
-// for (j = 0; j < projectsList.length; j++) {
-
-//   document.querySelectorAll(`.default_button_${j}`).addEventListener("click", function () {
-
-//     // let modaltech = '';
-//     // projectsList[i].technologies.forEach((projTech) => {
-//     //   modaltech += `<li class="lang">${projTech}</li>`;
-//     // });
-
-//   })
-
-
-// }
-
-
 for (let i = 0; projectsList.length; i++) {
   document.querySelector(`#seeproject-${i}`).addEventListener('click', () => {
     let modaltechnology = ''
     projectsList[i].technologies.forEach((language) => {
       modaltechnology += `
-        <li>${language}</li>
+        <li class="lang">${language}</li>
       `
     })
 
     ModalTitle.innerHTML = projectsList[i].mdltitle
     ModalPhoto.src = projectsList[i].imageLink
     ModalDescription.innerHTML = projectsList[i].description
-    ModalTech.innerHTML = modaltechnology
+
+  ModalCompany.innerHTML = projectsList[i].company
+  ModalYear.innerHTML = projectsList[i].year
+  ModalRole.innerHTML = projectsList[i].role
+ModalTech2.innerHTML = modaltechnology
+ModalSeeSource.setAttribute('href', `${projectsList[i].sourceLink}`)
+ModalSeeLive.setAttribute('href', `${projectsList[i].demoLink}`)
     ModalBack.style.display = 'block'
+  document.querySelector('main').style.filter = ' blur(5px)';
+  document.querySelector('header').style.filter = ' blur(5px)';
+
+
   })
 }
 
 //Close Modal
-
-function CloseModal() {
-  ModalBack.style.display = 'none'
-
-}
-
-
-
-
-
-
-
 
 
 //Contact form Validation
