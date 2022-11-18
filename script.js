@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unused-vars */
 const projectsList = [
   {
     mdltitle: 'Tonic',
