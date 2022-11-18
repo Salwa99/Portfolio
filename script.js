@@ -103,7 +103,7 @@ for (let i = 0; i < projectsList.length; i++) {
 
 
 for (let i = 0; projectsList.length; i++) {
-  document.querySelector(`#seeproject-${i}`).addEventListener('click', () => {
+  document.querySelector(`#seeproject-${i}`).addEventListener('click',function() {
     let modaltechnology = ''
     projectsList[i].technologies.forEach((language) => {
       modaltechnology += `
