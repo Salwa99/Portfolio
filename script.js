@@ -62,7 +62,7 @@ const ModalYear = document.querySelector('#year')
 
 ProjectCards.innerHTML = '';
 
-for (let i = 0; i < projectsList.length; i++) {
+for (let i = 0; i < projectsList; i++) {
 
   let tech_lang = '';
   projectsList[i].technologies.forEach((projTech) => {
