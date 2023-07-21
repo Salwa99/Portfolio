@@ -48,6 +48,18 @@ const projectsList = [
     sourceLink: "https://github.com/Salwa99/Leaderboard",
     demoLink: "salwa99.github.io/Leaderboard/",
   },
+  {
+    mdltitle: "Leaderboard",
+    description:
+      "My Budget is designed to help users manage their finances and track their expenses. It provides features such as user signup and login functionality to ensure secure access to personal budget information.",
+    imageLink: "img/MyBudget.png",
+    technologies: ["html", "css", "RoR", "postgres"],
+    role: "Backend dev",
+    company: "Microverse",
+    year: "2023",
+    sourceLink: "https://github.com/Salwa99/My-Budget",
+    demoLink: "my-budget-0gkf.onrender.com/",
+  },
 ];
 
 const ProjectCards = document.querySelector('#portfolio-section');
