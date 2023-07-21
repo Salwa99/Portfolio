@@ -38,7 +38,7 @@ button:hover {
 }
 
 .logo {
-  color: #1049c4
+  color: #1049c4;
 }
 
 .sub-title a {
@@ -136,26 +136,29 @@ header {
   flex-direction: column;
   gap: 12px;
   border-bottom-left-radius: 100px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-  .txt-wrapper{
+.txt-wrapper {
   display: flex;
   align-items: center;
 }
-.txt-wrapper .static-txt{
+
+.txt-wrapper .static-txt {
   color: #5125f0;
   font-size: 20px;
   font-weight: 600;
   margin-left: 5%;
 }
-.txt-wrapper .dynamic-txt{
+
+.txt-wrapper .dynamic-txt {
   margin-left: 15px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
 }
-.dynamic-txt li{
+
+.dynamic-txt li {
   list-style: none;
   color: #9089ee;
   font-size: 20px;
@@ -164,17 +167,20 @@ header {
   top: 0;
   animation: slide 8s steps(4) infinite;
 }
+
 @keyframes slide {
-  100%{
+  100% {
     top: -360px;
   }
 }
-.dynamic-txt li span{
+
+.dynamic-txt li span {
   position: relative;
   margin: 5px 0;
   line-height: 90px;
 }
-.dynamic-txt li span::after{
+
+.dynamic-txt li span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -182,11 +188,14 @@ header {
   width: 100%;
   animation: typing 4s steps(10) infinite;
 }
+
 @keyframes typing {
-  40%, 60%{
+  40%,
+  60% {
     left: calc(100% + 30px);
   }
-  100%{
+
+  100% {
     left: 0;
   }
 }
@@ -386,7 +395,7 @@ header {
 .technologies-2 {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 5px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -401,7 +410,11 @@ header {
   gap: 16px;
 }
 
-.technologies-2 li img{
+.source img {
+  filter: invert(65%) sepia(27%) saturate(3000%) hue-rotate(220deg) brightness(100%) contrast(101%);
+}
+
+.technologies-2 li img {
   width: 50px;
   height: 50px;
 }
@@ -590,10 +603,6 @@ header {
   margin-right: 10px;
 }
 
-.source img {
-  filter: invert(65%) sepia(27%) saturate(3000%) hue-rotate(220deg) brightness(100%) contrast(101%);
-}
-
 .modalbtns button img {
   width: 14px;
 }
@@ -610,13 +619,13 @@ header {
 }
 
 @media all and (min-width: 768px) {
-
   .logo {
     font-size: 2.5rem;
     color: #1049c4;
-    text-shadow: 0 0 8px #2b4046,
-    0 0 10px #557188,
-    0 0 20px rgb(54, 11, 247),
+    text-shadow:
+      0 0 8px #2b4046,
+      0 0 10px #557188,
+      0 0 20px rgb(54, 11, 247),;
   }
 
   .nav-menu-desktop {
@@ -668,21 +677,19 @@ header {
     font-size: 48px;
   }
 
-  .txt-wrapper .static-txt{
-  font-size: 50px;
-  font-weight: 600;
-}
+  .txt-wrapper .static-txt {
+    font-size: 50px;
+    font-weight: 600;
+  }
 
-.dynamic-txt li{
-  font-size: 50px;
-  font-weight: 600;
-}
+  .dynamic-txt li {
+    font-size: 50px;
+    font-weight: 600;
+  }
 
   .myinfo p {
     margin: 20px 0;
   }
-
-
 
   #headsection p {
     font-size: 20px;
@@ -711,7 +718,6 @@ header {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-color: #ab87f0;
-
   }
 
   .order {
