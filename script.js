@@ -53,7 +53,7 @@ const projectsList = [
     description:
       "My Budget is designed to help users manage their finances and track their expenses. It provides features such as user signup and login functionality to ensure secure access to personal budget information.",
     imageLink: "img/MyBudget.png",
-    technologies: ["html", "css", "RoR", "postgres"],
+    technologies: ["html", "css", "ror", "postgres"],
     role: "Backend dev",
     company: "Microverse",
     year: "2023",
