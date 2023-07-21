@@ -14,6 +14,7 @@ a {
 
 body {
   background-color: #e5e5e5;
+  scroll-behavior: smooth;
 }
 
 button:hover {

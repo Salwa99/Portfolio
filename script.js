@@ -49,7 +49,7 @@ const projectsList = [
     demoLink: "salwa99.github.io/Leaderboard/",
   },
   {
-    mdltitle: "Leaderboard",
+    mdltitle: "My Budget",
     description:
       "My Budget is designed to help users manage their finances and track their expenses. It provides features such as user signup and login functionality to ensure secure access to personal budget information.",
     imageLink: "img/MyBudget.png",
