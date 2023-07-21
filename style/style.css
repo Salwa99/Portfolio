@@ -37,6 +37,10 @@ button:hover {
   color: #253858;
 }
 
+.logo {
+  color: #1049c4
+}
+
 .sub-title a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
@@ -609,6 +613,10 @@ header {
 
   .logo {
     font-size: 2.5rem;
+    color: #1049c4;
+    text-shadow: 0 0 8px #2b4046,
+    0 0 10px #557188,
+    0 0 20px rgb(54, 11, 247),
   }
 
   .nav-menu-desktop {
@@ -637,7 +645,7 @@ header {
   }
 
   header .nav-menubar .menu-desktop a:hover {
-    color: #15dbe2;
+    color: #d9d7f8;
     background: #8698e7;
   }
 
