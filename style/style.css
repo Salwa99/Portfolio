@@ -123,11 +123,11 @@ header {
 
 #headsection {
   width: 100%;
-  height: calc(100vh - 48px);
+  height: 100vh;
   background-image: url("img/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 114px;
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -562,6 +562,11 @@ header {
 }
 
 @media all and (min-width: 768px) {
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
   .nav-menu-desktop {
     display: block;
   }
@@ -577,7 +582,10 @@ header {
   }
 
   header .nav-menubar .menu-desktop a {
-    font-size: 15px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #8698e7;
     line-height: 20px;
     font-style: normal;
     font-weight: 500;
