@@ -132,24 +132,59 @@ header {
   flex-direction: column;
   gap: 12px;
   border-bottom-left-radius: 100px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
-
-
-.about h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: #172b4d;
+  .txt-wrapper{
+  display: flex;
+  align-items: center;
 }
-
-#headsection h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  color: #172b4d;
-  padding: 0 24px;
+.txt-wrapper .static-txt{
+  color: #5125f0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5%;
+}
+.txt-wrapper .dynamic-txt{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txt li{
+  list-style: none;
+  color: #9089ee;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txt li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
 }
 
 .about p {
@@ -625,9 +660,21 @@ header {
     font-size: 48px;
   }
 
+  .txt-wrapper .static-txt{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.dynamic-txt li{
+  font-size: 50px;
+  font-weight: 600;
+}
+
   .myinfo p {
     margin: 20px 0;
   }
+
+
 
   #headsection p {
     font-size: 20px;
