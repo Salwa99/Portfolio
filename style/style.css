@@ -135,6 +135,8 @@ header {
   background-color: #fff;
 }
 
+
+
 .about h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -345,8 +347,10 @@ header {
 .technologies-2 {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-wrap: wrap; 
+  gap: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .technologies-2 li {
@@ -392,7 +396,7 @@ header {
 }
 
 .contact-descrip {
-  text-align: center;
+  text-align: left;
   background: #6070ff;
   border-radius: 10px;
   font-size: 20px;
@@ -590,7 +594,6 @@ header {
     font-size: 18px;
     padding: 5px;
     border-radius: 15px;
-    background: #8698e7;
     line-height: 20px;
     font-style: normal;
     font-weight: 500;
@@ -600,6 +603,7 @@ header {
 
   header .nav-menubar .menu-desktop a:hover {
     color: #15dbe2;
+    background: #8698e7;
   }
 
   .menu-icon {
@@ -642,6 +646,17 @@ header {
   .img {
     width: 50%;
     cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #ab87f0;
+
   }
 
   .order {
@@ -670,7 +685,7 @@ header {
 
   .technologies-2 li {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .wrapper {
