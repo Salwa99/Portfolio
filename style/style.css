@@ -666,6 +666,10 @@ header {
     transition: all 0.4s ease-in;
   }
 
+  #contact {
+    border: 2px solid rgb(54, 12, 238);
+  }
+
   header .nav-menubar .menu-desktop a:hover {
     color: #d9d7f8;
     background: #8698e7;
