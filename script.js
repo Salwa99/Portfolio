@@ -22,7 +22,7 @@ const projectsList = [
     company: "Microverse",
     year: "2023",
     sourceLink: "https://github.com/Salwa99/Math-magician",
-    demoLink: "calculator-mltp.onrender.com/",
+    demoLink: "https://calculator-mltp.onrender.com/",
   },
   {
     mdltitle: "Space Travelers' Hub",
@@ -46,7 +46,7 @@ const projectsList = [
     company: "Microverse",
     year: "2023",
     sourceLink: "https://github.com/Salwa99/Leaderboard",
-    demoLink: "salwa99.github.io/Leaderboard/",
+    demoLink: "https://salwa99.github.io/Leaderboard/",
   },
   {
     mdltitle: "My Budget",
@@ -58,7 +58,7 @@ const projectsList = [
     company: "Microverse",
     year: "2023",
     sourceLink: "https://github.com/Salwa99/My-Budget",
-    demoLink: "my-budget-0gkf.onrender.com/",
+    demoLink: "https://my-budget-0gkf.onrender.com/",
   },
 ];
 

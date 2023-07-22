@@ -67,7 +67,7 @@ button:hover {
 }
 
 header .nav-menubar {
-  padding-top: 20px;
+  padding: 9px 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -98,18 +98,20 @@ header .nav-menubar a:hover {
 }
 
 header {
-  margin: 0 auto;
-  height: 48px;
-  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .menuformobile {
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
-  top: 10vh;
+  top: 0;
   display: none;
-  margin-top: -10.5vh;
   flex-direction: column;
   height: 125vh;
   color: white;
@@ -117,12 +119,54 @@ header {
   background-color: rgba(69, 88, 255, 0.735);
 }
 
+.dynamic-txt li {
+  list-style: none;
+  color: #9089ee;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+
+.technologies-2 li {
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modaltechs li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.modaltech2 li {
+  list-style: none;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+.worktech li {
+  list-style: none;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+#header .menu-desktop li {
+  list-style: none;
+  margin-right: 20px;
+}
+
 .closeicon {
   width: 18px;
   height: 18px;
-  margin-left: 88vw;
+  margin-left: 80vw;
   margin-top: 7%;
   margin-bottom: 10%;
+  z-index: 99999;
 }
 
 #headsection {
@@ -156,16 +200,6 @@ header {
   height: 90px;
   line-height: 90px;
   overflow: hidden;
-}
-
-.dynamic-txt li {
-  list-style: none;
-  color: #9089ee;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-  top: 0;
-  animation: slide 8s steps(4) infinite;
 }
 
 @keyframes slide {
@@ -401,15 +435,6 @@ header {
   overflow-y: hidden;
 }
 
-.technologies-2 li {
-  background: #f7f7f9;
-  border-radius: 8px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .source img {
   filter: invert(65%) sepia(27%) saturate(3000%) hue-rotate(220deg) brightness(100%) contrast(101%);
 }
@@ -559,26 +584,9 @@ header {
   align-items: center;
 }
 
-.modaltechs li {
-  list-style: none;
-  font-size: 13px;
-}
-
 #role,
 #year {
   color: #7a869a;
-}
-
-.modaltech2 li {
-  list-style: none;
-  font-size: 12px;
-  color: #6070ff;
-}
-
-.worktech li {
-  list-style: none;
-  font-size: 12px;
-  color: #6070ff;
 }
 
 .modaldetails {
@@ -642,6 +650,14 @@ header {
     padding: 0;
   }
 
+  .nav-menubar {
+    padding: 15px 142px;
+  }
+
+  header .nav-menubar {
+    padding: 20px;
+  }
+
   header .nav-menubar .menu-desktop a {
     font-size: 18px;
     padding: 5px;
@@ -653,6 +669,10 @@ header {
     transition: all 0.4s ease-in;
   }
 
+  #contact {
+    border: 2px solid rgb(41, 7, 196);
+  }
+
   header .nav-menubar .menu-desktop a:hover {
     color: #d9d7f8;
     background: #8698e7;
@@ -660,10 +680,6 @@ header {
 
   .menu-icon {
     display: none;
-  }
-
-  .nav-menubar {
-    padding: 15px 142px;
   }
 
   #headsection {
