@@ -77,7 +77,6 @@ header .nav-menubar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .mobile-menu a {
@@ -103,9 +102,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  z-index: 1000; 
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .menuformobile {
@@ -118,6 +117,42 @@ header {
   color: white;
   width: 100vw;
   background-color: rgba(69, 88, 255, 0.735);
+}
+
+.dynamic-txt li {
+  list-style: none;
+  color: #9089ee;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+
+.technologies-2 li {
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modaltechs li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.modaltech2 li {
+  list-style: none;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+.worktech li {
+  list-style: none;
+  font-size: 12px;
+  color: #6070ff;
 }
 
 #header .menu-desktop li {
@@ -165,16 +200,6 @@ header {
   height: 90px;
   line-height: 90px;
   overflow: hidden;
-}
-
-.dynamic-txt li {
-  list-style: none;
-  color: #9089ee;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-  top: 0;
-  animation: slide 8s steps(4) infinite;
 }
 
 @keyframes slide {
@@ -410,15 +435,6 @@ header {
   overflow-y: hidden;
 }
 
-.technologies-2 li {
-  background: #f7f7f9;
-  border-radius: 8px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .source img {
   filter: invert(65%) sepia(27%) saturate(3000%) hue-rotate(220deg) brightness(100%) contrast(101%);
 }
@@ -568,26 +584,9 @@ header {
   align-items: center;
 }
 
-.modaltechs li {
-  list-style: none;
-  font-size: 13px;
-}
-
 #role,
 #year {
   color: #7a869a;
-}
-
-.modaltech2 li {
-  list-style: none;
-  font-size: 12px;
-  color: #6070ff;
-}
-
-.worktech li {
-  list-style: none;
-  font-size: 12px;
-  color: #6070ff;
 }
 
 .modaldetails {
@@ -651,6 +650,10 @@ header {
     padding: 0;
   }
 
+  .nav-menubar {
+    padding: 15px 142px;
+  }
+
   header .nav-menubar {
     padding: 20px;
   }
@@ -667,7 +670,7 @@ header {
   }
 
   #contact {
-    border: 2px solid rgb(54, 12, 238);
+    border: 2px solid rgb(41, 7, 196);
   }
 
   header .nav-menubar .menu-desktop a:hover {
@@ -677,10 +680,6 @@ header {
 
   .menu-icon {
     display: none;
-  }
-
-  .nav-menubar {
-    padding: 15px 142px;
   }
 
   #headsection {
