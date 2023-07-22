@@ -67,7 +67,7 @@ button:hover {
 }
 
 header .nav-menubar {
-  padding-top: 20px;
+  padding: 9px 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -77,6 +77,7 @@ header .nav-menubar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .mobile-menu a {
@@ -98,18 +99,20 @@ header .nav-menubar a:hover {
 }
 
 header {
-  margin: 0 auto;
-  height: 48px;
-  padding: 0 24px;
-  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
 }
 
 .menuformobile {
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
-  top: 10vh;
+  top: 0;
   display: none;
-  margin-top: -10.5vh;
   flex-direction: column;
   height: 125vh;
   color: white;
@@ -117,12 +120,18 @@ header {
   background-color: rgba(69, 88, 255, 0.735);
 }
 
+#header .menu-desktop li {
+  list-style: none;
+  margin-right: 20px;
+}
+
 .closeicon {
   width: 18px;
   height: 18px;
-  margin-left: 88vw;
+  margin-left: 80vw;
   margin-top: 7%;
   margin-bottom: 10%;
+  z-index: 99999;
 }
 
 #headsection {
@@ -640,6 +649,10 @@ header {
 
   header {
     padding: 0;
+  }
+
+  header .nav-menubar {
+    padding: 20px;
   }
 
   header .nav-menubar .menu-desktop a {
